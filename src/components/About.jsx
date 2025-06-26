@@ -31,17 +31,6 @@ export default function About() {
           I focus on writing clean, maintainable code and improving backend performance.
           Whether in a team or solo, I love solving real-world problems with smart, modern solutions.
         </p>
-
-        {/* Resume Button */}
-        <div className="mt-10">
-          <a
-            href="/Vedant_S_Shah_Resume.pdf"
-            download
-            className="inline-block bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold px-7 py-3 rounded-full shadow-lg transition-all"
-          >
-            📄 Download Resume
-          </a>
-        </div>
       </div>
     </section>
   );

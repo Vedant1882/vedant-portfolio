@@ -7,6 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const sidebarRef = useRef();
   const [darkMode, setDarkMode] = useDarkMode();
+  const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
     { id: 'about', label: 'About' },
@@ -15,6 +16,14 @@ export default function Header() {
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = (
     <Scrollspy
@@ -50,11 +59,14 @@ export default function Header() {
   }, [isOpen]);
 
   return (
-    <header className="bg-white dark:bg-gray-900 text-black dark:text-white fixed top-0 w-full z-50 shadow-md">
-      <div className="max-w-6xl mx-auto grid grid-cols-3 items-center px-4 py-4">
-        
-        {/* Left: Toggle Button */}
-        <div className="flex items-center">
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? 'shadow-lg py-2' : 'py-4'
+      } bg-white dark:bg-gray-900 text-black dark:text-white`}
+    >
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 relative">
+        {/* Left: Theme Toggle */}
+        <div className="flex items-center z-10">
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-105 transition"
@@ -68,22 +80,38 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Center (optional branding/logo) */}
-        <div className="text-center text-lg font-bold">
-          <a href="/" className="text-teal-500 hover:underline">Vedant</a>
+        {/* Center: Resume Button - normal & icon */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 z-0">
+          {/* Desktop */}
+          <a
+            href="/Vedant_S_Shah_Resume.pdf"
+            download
+            className="hidden sm:inline-block bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold px-7 py-2.5 rounded-full shadow-md transition-all"
+          >
+            📄 Download Resume
+          </a>
+
+          {/* Mobile (icon) */}
+          <a
+            href="/Vedant_S_Shah_Resume.pdf"
+            download
+            className="inline-block sm:hidden bg-gradient-to-r from-teal-500 to-cyan-500 p-2 rounded-full shadow-md transition hover:scale-110"
+            title="Download Resume"
+          >
+            📄
+          </a>
         </div>
 
-        {/* Right: Hamburger Menu (mobile) */}
-        <div className="flex justify-end md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} aria-label="Menu">
+        {/* Right: Nav (desktop) + Hamburger (mobile) */}
+        <div className="flex items-center space-x-4 z-10">
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex space-x-6">{navLinks}</nav>
+
+          {/* Mobile Hamburger */}
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
-
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex justify-end col-span-1">
-          {navLinks}
-        </nav>
       </div>
 
       {/* Mobile Sidebar */}
@@ -98,8 +126,11 @@ export default function Header() {
             <X size={28} />
           </button>
         </div>
-        <nav className="flex flex-col space-y-6 mt-10 text-lg" onClick={() => setIsOpen(false)}>
-          {navItems.map(item => (
+        <nav
+          className="flex flex-col space-y-6 mt-10 text-lg"
+          onClick={() => setIsOpen(false)}
+        >
+          {navItems.map((item) => (
             <a key={item.id} href={`#${item.id}`} className="hover:text-teal-500">
               {item.label}
             </a>
