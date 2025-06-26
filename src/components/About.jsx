@@ -1,4 +1,4 @@
-import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function About() {
   return (
@@ -21,6 +21,17 @@ export default function About() {
         <h2 className="text-4xl sm:text-5xl font-extrabold mb-3 text-teal-500 dark:text-teal-400">
           Vedant S Shah
         </h2>
+        <p className="text-teal-400 text-lg font-medium mb-4">
+          <Typewriter
+            words={['I build sleek and scalable web apps.', 'Turning ideas into code.', 'Clean. Fast. Modern.']}
+            loop
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1500}
+          />
+        </p>
         <p className="text-gray-700 dark:text-gray-300 text-lg font-medium mb-6 tracking-wide">
           Full Stack Developer | Angular • React • .NET • SQL
         </p>

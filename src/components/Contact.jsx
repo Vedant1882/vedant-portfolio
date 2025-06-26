@@ -24,21 +24,21 @@ export default function Contact() {
             name="name"
             placeholder="Name"
             required
-            className="w-full p-3 rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition"
+            className="w-full p-3 rounded bg-white text-gray-900 focus:ring-2 focus:ring-teal-400 outline-none transition"
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
             required
-            className="w-full p-3 rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition"
+            className="w-full p-3 rounded bg-white text-gray-900 focus:ring-2 focus:ring-teal-400 outline-none transition"
           />
           <textarea
             name="message"
             rows="4"
             placeholder="Message"
             required
-            className="w-full p-3 rounded bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-400 transition"
+            className="w-full p-3 rounded bg-white text-gray-900 focus:ring-2 focus:ring-teal-400 outline-none transition"
           ></textarea>
           <button
             type="submit"
