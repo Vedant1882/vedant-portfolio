@@ -18,10 +18,11 @@ export default function Projects() {
             badges: ['Angular', '.NET Web API', 'JWT', 'SQL Server'],
         },
         {
-            title: 'Cafeteria Management',
+            title: 'Budget Calculator',
             description: `
-        QR-based ordering system for mobile users. Built using Java and MySQL to handle user sessions, live order processing, and digital transformation in food services.`,
-            badges: ['Java', 'MySQL', 'QR Scanner'],
+            Built a logic-focused budgeting tool using Angular, allowing users to manage expenses effectively. 
+I           ntegrated Excel import/export functionality for seamless data handling and analysis.`,
+            badges: ['Angular'],
         },
         {
             title: 'Student Portal',
@@ -29,21 +30,7 @@ export default function Projects() {
         Registration and login system with authentication and data handling using Java and MySQL. 
         Covers core backend logic, JDBC, session handling, and secure form validation.`,
             badges: ['Java', 'MySQL', 'JDBC'],
-        },
-        {
-            title: 'Password Generator',
-            description: `
-        A PHP-based random password generator that supports symbol, number, and length configurations. 
-        Created for academic learning of string manipulation, form handling, and UI with HTML/CSS.`,
-            badges: ['PHP', 'HTML', 'CSS'],
-        },
-        {
-            title: 'OpenCV Image Processing Tool',
-            description: `
-        Python-based app using OpenCV to perform grayscale conversion, blurring, edge detection, and face recognition (Haar Cascades). 
-        Designed with CLI and live webcam support for real-time image manipulation.`,
-            badges: ['Python', 'OpenCV', 'Face Detection'],
-        },
+        }
     ];
 
     return (

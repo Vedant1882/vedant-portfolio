@@ -23,7 +23,7 @@ export default function Contact() {
           </p>
 
           <form
-            action="https://formspree.io/f/mnqeylky"
+            action="https://formspree.io/f/xjkrpdzk"
             method="POST"
             className="space-y-4"
           >

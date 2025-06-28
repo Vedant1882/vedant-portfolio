@@ -7,20 +7,22 @@ export default function Experience() {
       title: 'TatvaSoft — Associate Software Engineer',
       date: 'Ahmedabad | Jun 2023 – Present',
       points: [
-        'Developed reusable Angular components and scalable .NET Web APIs.',
-        'Enhanced SQL Server performance using query optimization and indexing.',
-        'Improved CI/CD pipelines and collaborated with QA and BAs.',
-        'Built modules for a case management system in the health domain.',
+        'Built and enhanced a mission-critical Australian enterprise platform using AngularJS, Angular and .NET Web API, delivering a responsive UI and robust backend services.',
+        'Architected reusable, modular .NET RESTful APIs, ensuring separation of concerns and future extensibility.',
+        'Optimized SQL Server queries and indexes, improving data retrieval performance and reducing load times.',
+        'Streamlined CI/CD pipeline, automating builds, tests and deployments to accelerate releases and reduce effort.',
+        'Led peer code-review sessions and championed clean-architecture principles, elevating code quality and maintainability across the team.',
+        'Collaborated closely with QA engineers and business analysts to translate requirements into technical solutions, ensuring on-time delivery and alignment with stakeholder goals.'
       ],
     },
     {
       title: 'TatvaSoft — Intern',
       date: 'Jan 2023 – Jun 2023',
       points: [
-        'Created backend modules with ASP.NET MVC and LINQ.',
-        'Worked with Razor Views and session handling.',
-        'Optimized stored procedures for high-traffic data operations.',
-        'Learned SDLC practices and improved debugging efficiency.',
+        'Developed a project using ASP.NET MVC and SQL Server, enabling smooth build and deployment workflows.',
+        'Implemented secure authentication and order-management modules, strengthening system reliability.',
+        'Optimized stored procedures and database indexes, boosting performance and stability under peak load.'
+
       ],
     },
   ];
