@@ -14,20 +14,6 @@ export default function Projects() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {/* Project 1 */}
                     <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition">
-                        <h3 className="text-xl font-bold mb-2">Cafeteria Management</h3>
-                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                            QR-based menu and ordering system for mobile users to streamline cafeteria operations. Built using Java and MySQL, this project enhanced real-time data handling, user sessions, and digital transformation in small-scale service environments.
-                        </p>
-                    </div>
-
-                    {/* Project 2 */}
-                    <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition">
-                        <h3 className="text-xl font-bold mb-2">Student Portal</h3>
-                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                            A registration and login system for managing student data. Built using Java and MySQL with secure authentication, session management, and form handling. This project reinforced backend development and JDBC concepts.
-                        </p>
-                    </div>
-                    <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition">
                         <h3 className="text-xl font-bold mb-2">Personal Portfolio Website</h3>
                         <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
                             A fully responsive and interactive portfolio website built using <strong>React</strong> and styled with <strong>Tailwind CSS</strong>. This project serves as both a personal showcase and a practical demonstration of key frontend development concepts including component-based architecture, routing, responsive design, and animations.
@@ -45,6 +31,20 @@ export default function Projects() {
                             It features advanced capabilities such as <strong>search, sorting, and filtering</strong> across large datasets, optimized for performance with efficient query handling on the backend. To ensure secure access, the app implements <strong>JWT-based authentication and authorization</strong>, controlling user permissions across modules.
                             <br /><br />
                             This project showcases practical experience in API integration, component-based UI design, token-based user management, and optimization strategies for scalable data-driven applications. It also reinforces strong understanding of Angular reactive forms, HTTP interceptors, and .NET middleware.
+                        </p>
+                    </div>
+                    <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition">
+                        <h3 className="text-xl font-bold mb-2">Cafeteria Management</h3>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                            QR-based menu and ordering system for mobile users to streamline cafeteria operations. Built using Java and MySQL, this project enhanced real-time data handling, user sessions, and digital transformation in small-scale service environments.
+                        </p>
+                    </div>
+
+                    {/* Project 2 */}
+                    <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition">
+                        <h3 className="text-xl font-bold mb-2">Student Portal</h3>
+                        <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                            A registration and login system for managing student data. Built using Java and MySQL with secure authentication, session management, and form handling. This project reinforced backend development and JDBC concepts.
                         </p>
                     </div>
                 </div>
