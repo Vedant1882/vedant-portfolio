@@ -27,22 +27,24 @@ export default function Projects() {
                             A registration and login system for managing student data. Built using Java and MySQL with secure authentication, session management, and form handling. This project reinforced backend development and JDBC concepts.
                         </p>
                     </div>
-
                     <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition">
-                        <h3 className="text-xl font-bold mb-2">Password Generator</h3>
+                        <h3 className="text-xl font-bold mb-2">Personal Portfolio Website</h3>
                         <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                            A web-based tool developed using <strong>HTML, CSS, and PHP</strong> that generates secure, randomized passwords based on customizable user inputs. Users can define password length, include/exclude symbols, numbers, and uppercase letters to meet specific security criteria. This project was built for academic purposes and served as a hands-on introduction to basic backend scripting and form processing in PHP.
+                            A fully responsive and interactive portfolio website built using <strong>React</strong> and styled with <strong>Tailwind CSS</strong>. This project serves as both a personal showcase and a practical demonstration of key frontend development concepts including component-based architecture, routing, responsive design, and animations.
                             <br /><br />
-                            It reinforced understanding of client-server interactions, input validation, and string manipulation while focusing on user-friendly UI/UX practices.
+                            It features smooth scrolling navigation, theme toggling (dark/light mode), animated loading screen, and a dynamic resume download section. Developed using React hooks like <strong>useState</strong> and <strong>useEffect</strong>, it handles state-driven interactions and user experience enhancements. Scrollspy integration dynamically updates active navigation based on scroll position.
+                            <br /><br />
+                            This project helped consolidate knowledge of React fundamentals, reusable UI components, custom hooks, responsive layouts, and real-world design patterns. It also includes performance considerations such as conditional rendering and code structure optimization.
                         </p>
                     </div>
-
                     <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition">
-                        <h3 className="text-xl font-bold mb-2">OpenCV Image Processing Tool</h3>
+                        <h3 className="text-xl font-bold mb-2">Product Management System</h3>
                         <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                            A Python-based application using the <strong>OpenCV library</strong> to perform various image processing tasks such as grayscale conversion, blurring, edge detection (Canny), and face recognition using Haar cascades. Built as a learning project, it features a simple CLI and GUI interface (using `cv2.imshow`) for live webcam input and still image analysis.
+                            A full-stack web application built using <strong>Angular</strong> for the frontend and <strong>.NET Web API</strong> for the backend. This system enables users to manage a catalog of products with functionality to create, read, update, and delete (CRUD) product entries.
                             <br /><br />
-                            Through this project, I explored foundational concepts in computer vision, including filters, object detection, and contour mapping. It served as a practical exercise to understand real-time image manipulation and frame-by-frame analysis using Python.
+                            It features advanced capabilities such as <strong>search, sorting, and filtering</strong> across large datasets, optimized for performance with efficient query handling on the backend. To ensure secure access, the app implements <strong>JWT-based authentication and authorization</strong>, controlling user permissions across modules.
+                            <br /><br />
+                            This project showcases practical experience in API integration, component-based UI design, token-based user management, and optimization strategies for scalable data-driven applications. It also reinforces strong understanding of Angular reactive forms, HTTP interceptors, and .NET middleware.
                         </p>
                     </div>
                 </div>
